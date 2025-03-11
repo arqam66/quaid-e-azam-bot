@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background: linear-gradient(135deg, #01411c, #006600, #01411c);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main .image-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.main .image-container .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .image-container .image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border: 5px solid #ffffff;
+  background-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+}
+
+.main .image-container h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.main .image-container p {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: larger;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.main .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main .input .talk {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.main .input .talk:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.main .input .talk i {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.main .input .content {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .main .image-container h1 {
+    font-size: 30px;
+  }
+  .main .image-container p {
+    font-size: medium;
+  }
+  .main .input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main .image-container h1 {
+    font-size: 24px;
+  }
+  .main .image-container p {
+    font-size: small;
+  }
+  .main .input {
+    width: 100%;
+  }
+  .main .input .content {
+    font-size: 16px;
+  }
+}
